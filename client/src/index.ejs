@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title><%= comic.name %></title>
+    <style>
+      @font-face {
+        font-family: 'xkcd-Regular-v3';
+        src: url('https://xkcd.com/s/4fcbf3.woff') format('woff');
+      }
+
+      body {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Comic HTML -->
+    <div id="comic" style="height: <%= comic.height %>px; width: <%= comic.width %>px"></div>
+
+    <!-- Embeds -->
+    <%= tags.bodyTags %>
+  </body>
+</html>

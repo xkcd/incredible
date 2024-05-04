@@ -1,0 +1,9 @@
+{
+  "name": "Incredible",
+  "alt": "The Credible Machine",
+  "url": "/incredible",
+  "publicPath": "/",
+  "width": 740,
+  "height": 740,
+  "apiEndpoint": "http://localhost:8888/"
+}

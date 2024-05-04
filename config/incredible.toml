@@ -1,0 +1,26 @@
+[web]
+port = 8888
+base_url = "/"
+origins = ["http://localhost", "http://127.0.0.1", "http://localhost:8889", "http://localhost:8888", "http://127.0.0.1:8889", "http://127.0.0.1:8888"]
+
+[cache]
+machines = 1000
+puzzles = 10
+blueprints = 100000
+deltas = 20000
+snapshots = 20000
+blueprint2puzzle = 20000
+
+[mods]
+user = "$2b$05$LVPgqAq9laeGKP9QofeRCu/rak.9pRnRCm4cVXwafpETcCLR3R8ta"
+
+[redis]
+database = 0
+host = "127.0.0.1"
+port = 6379
+maxConnections = 10000
+maxIdleTimeout = 60
+retry_count = 5
+workorder_ttl = 7200 # 2 hours
+orderbook_ttl = 1200 # 20 minutes
+tls = false
